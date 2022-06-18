@@ -1,5 +1,5 @@
 const decode58Check = require("./crypto").decode58Check;
-const {Block, Transaction, Account} = require("../protocol/core/Tron_pb");
+const {Block, Transaction, Account} = require("../protocol/core/Lite_pb");
 const google_protobuf_any_pb = require('google-protobuf/google/protobuf/any_pb.js');
 const encodeString = require("../lib/code").encodeString;
 
@@ -155,7 +155,7 @@ function buildAssetIssue(options) {
   contract.setNum(options.num);
   contract.setEndTime(Date.parse(options.endTime));
   contract.setStartTime(Date.parse(options.startTime));
-  contract.setTrxNum(options.trxNum);
+  contract.setXltNum(options.xltNum);
   contract.setPrecision(options.precision);
   contract.setDescription(encodeString(options.description));
   contract.setUrl(encodeString(options.url));
@@ -182,7 +182,7 @@ function buildAssetIssue(options) {
  * Freeze balance
  *
  * @param address From which address to freze
- * @param amount The amount of TRX to freeze
+ * @param amount The amount of XLT to freeze
  * @param duration Duration in days
  * @param resource bandwith or energy   Bandwidth Point = 0，Energy = 1
  */

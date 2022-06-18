@@ -11,7 +11,7 @@ var jspb = require('google-protobuf');
 var goog = jspb;
 var global = Function('return this')();
 
-var core_Tron_pb = require('../core/Tron_pb.js');
+var core_Lite_pb = require('../core/Lite_pb.js');
 var core_Contract_pb = require('../core/Contract_pb.js');
 var google_api_annotations_pb = require('../google/api/annotations_pb.js');
 goog.exportSymbol('proto.protocol.AccountNetMessage', null, global);
@@ -535,7 +535,7 @@ proto.protocol.WitnessList.prototype.toObject = function(opt_includeInstance) {
 proto.protocol.WitnessList.toObject = function(includeInstance, msg) {
   var f, obj = {
     witnessesList: jspb.Message.toObjectList(msg.getWitnessesList(),
-    core_Tron_pb.Witness.toObject, includeInstance)
+    core_Lite_pb.Witness.toObject, includeInstance)
   };
 
   if (includeInstance) {
@@ -573,8 +573,8 @@ proto.protocol.WitnessList.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new core_Tron_pb.Witness;
-      reader.readMessage(value,core_Tron_pb.Witness.deserializeBinaryFromReader);
+      var value = new core_Lite_pb.Witness;
+      reader.readMessage(value,core_Lite_pb.Witness.deserializeBinaryFromReader);
       msg.addWitnesses(value);
       break;
     default:
@@ -611,7 +611,7 @@ proto.protocol.WitnessList.serializeBinaryToWriter = function(message, writer) {
     writer.writeRepeatedMessage(
       1,
       f,
-      core_Tron_pb.Witness.serializeBinaryToWriter
+      core_Lite_pb.Witness.serializeBinaryToWriter
     );
   }
 };
@@ -623,7 +623,7 @@ proto.protocol.WitnessList.serializeBinaryToWriter = function(message, writer) {
  */
 proto.protocol.WitnessList.prototype.getWitnessesList = function() {
   return /** @type{!Array.<!proto.protocol.Witness>} */ (
-    jspb.Message.getRepeatedWrapperField(this, core_Tron_pb.Witness, 1));
+    jspb.Message.getRepeatedWrapperField(this, core_Lite_pb.Witness, 1));
 };
 
 
@@ -703,7 +703,7 @@ proto.protocol.ProposalList.prototype.toObject = function(opt_includeInstance) {
 proto.protocol.ProposalList.toObject = function(includeInstance, msg) {
   var f, obj = {
     proposalsList: jspb.Message.toObjectList(msg.getProposalsList(),
-    core_Tron_pb.Proposal.toObject, includeInstance)
+    core_Lite_pb.Proposal.toObject, includeInstance)
   };
 
   if (includeInstance) {
@@ -741,8 +741,8 @@ proto.protocol.ProposalList.deserializeBinaryFromReader = function(msg, reader) 
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new core_Tron_pb.Proposal;
-      reader.readMessage(value,core_Tron_pb.Proposal.deserializeBinaryFromReader);
+      var value = new core_Lite_pb.Proposal;
+      reader.readMessage(value,core_Lite_pb.Proposal.deserializeBinaryFromReader);
       msg.addProposals(value);
       break;
     default:
@@ -779,7 +779,7 @@ proto.protocol.ProposalList.serializeBinaryToWriter = function(message, writer) 
     writer.writeRepeatedMessage(
       1,
       f,
-      core_Tron_pb.Proposal.serializeBinaryToWriter
+      core_Lite_pb.Proposal.serializeBinaryToWriter
     );
   }
 };
@@ -791,7 +791,7 @@ proto.protocol.ProposalList.serializeBinaryToWriter = function(message, writer) 
  */
 proto.protocol.ProposalList.prototype.getProposalsList = function() {
   return /** @type{!Array.<!proto.protocol.Proposal>} */ (
-    jspb.Message.getRepeatedWrapperField(this, core_Tron_pb.Proposal, 1));
+    jspb.Message.getRepeatedWrapperField(this, core_Lite_pb.Proposal, 1));
 };
 
 
@@ -871,7 +871,7 @@ proto.protocol.ExchangeList.prototype.toObject = function(opt_includeInstance) {
 proto.protocol.ExchangeList.toObject = function(includeInstance, msg) {
   var f, obj = {
     exchangesList: jspb.Message.toObjectList(msg.getExchangesList(),
-    core_Tron_pb.Exchange.toObject, includeInstance)
+    core_Lite_pb.Exchange.toObject, includeInstance)
   };
 
   if (includeInstance) {
@@ -909,8 +909,8 @@ proto.protocol.ExchangeList.deserializeBinaryFromReader = function(msg, reader) 
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new core_Tron_pb.Exchange;
-      reader.readMessage(value,core_Tron_pb.Exchange.deserializeBinaryFromReader);
+      var value = new core_Lite_pb.Exchange;
+      reader.readMessage(value,core_Lite_pb.Exchange.deserializeBinaryFromReader);
       msg.addExchanges(value);
       break;
     default:
@@ -947,7 +947,7 @@ proto.protocol.ExchangeList.serializeBinaryToWriter = function(message, writer) 
     writer.writeRepeatedMessage(
       1,
       f,
-      core_Tron_pb.Exchange.serializeBinaryToWriter
+      core_Lite_pb.Exchange.serializeBinaryToWriter
     );
   }
 };
@@ -959,7 +959,7 @@ proto.protocol.ExchangeList.serializeBinaryToWriter = function(message, writer) 
  */
 proto.protocol.ExchangeList.prototype.getExchangesList = function() {
   return /** @type{!Array.<!proto.protocol.Exchange>} */ (
-    jspb.Message.getRepeatedWrapperField(this, core_Tron_pb.Exchange, 1));
+    jspb.Message.getRepeatedWrapperField(this, core_Lite_pb.Exchange, 1));
 };
 
 
@@ -1207,7 +1207,7 @@ proto.protocol.BlockList.prototype.toObject = function(opt_includeInstance) {
 proto.protocol.BlockList.toObject = function(includeInstance, msg) {
   var f, obj = {
     blockList: jspb.Message.toObjectList(msg.getBlockList(),
-    core_Tron_pb.Block.toObject, includeInstance)
+    core_Lite_pb.Block.toObject, includeInstance)
   };
 
   if (includeInstance) {
@@ -1245,8 +1245,8 @@ proto.protocol.BlockList.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new core_Tron_pb.Block;
-      reader.readMessage(value,core_Tron_pb.Block.deserializeBinaryFromReader);
+      var value = new core_Lite_pb.Block;
+      reader.readMessage(value,core_Lite_pb.Block.deserializeBinaryFromReader);
       msg.addBlock(value);
       break;
     default:
@@ -1283,7 +1283,7 @@ proto.protocol.BlockList.serializeBinaryToWriter = function(message, writer) {
     writer.writeRepeatedMessage(
       1,
       f,
-      core_Tron_pb.Block.serializeBinaryToWriter
+      core_Lite_pb.Block.serializeBinaryToWriter
     );
   }
 };
@@ -1295,7 +1295,7 @@ proto.protocol.BlockList.serializeBinaryToWriter = function(message, writer) {
  */
 proto.protocol.BlockList.prototype.getBlockList = function() {
   return /** @type{!Array.<!proto.protocol.Block>} */ (
-    jspb.Message.getRepeatedWrapperField(this, core_Tron_pb.Block, 1));
+    jspb.Message.getRepeatedWrapperField(this, core_Lite_pb.Block, 1));
 };
 
 
@@ -1375,7 +1375,7 @@ proto.protocol.TransactionList.prototype.toObject = function(opt_includeInstance
 proto.protocol.TransactionList.toObject = function(includeInstance, msg) {
   var f, obj = {
     transactionList: jspb.Message.toObjectList(msg.getTransactionList(),
-    core_Tron_pb.Transaction.toObject, includeInstance)
+    core_Lite_pb.Transaction.toObject, includeInstance)
   };
 
   if (includeInstance) {
@@ -1413,8 +1413,8 @@ proto.protocol.TransactionList.deserializeBinaryFromReader = function(msg, reade
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new core_Tron_pb.Transaction;
-      reader.readMessage(value,core_Tron_pb.Transaction.deserializeBinaryFromReader);
+      var value = new core_Lite_pb.Transaction;
+      reader.readMessage(value,core_Lite_pb.Transaction.deserializeBinaryFromReader);
       msg.addTransaction(value);
       break;
     default:
@@ -1451,7 +1451,7 @@ proto.protocol.TransactionList.serializeBinaryToWriter = function(message, write
     writer.writeRepeatedMessage(
       1,
       f,
-      core_Tron_pb.Transaction.serializeBinaryToWriter
+      core_Lite_pb.Transaction.serializeBinaryToWriter
     );
   }
 };
@@ -1463,7 +1463,7 @@ proto.protocol.TransactionList.serializeBinaryToWriter = function(message, write
  */
 proto.protocol.TransactionList.prototype.getTransactionList = function() {
   return /** @type{!Array.<!proto.protocol.Transaction>} */ (
-    jspb.Message.getRepeatedWrapperField(this, core_Tron_pb.Transaction, 1));
+    jspb.Message.getRepeatedWrapperField(this, core_Lite_pb.Transaction, 1));
 };
 
 
@@ -3010,7 +3010,7 @@ proto.protocol.AccountPaginated.prototype.toObject = function(opt_includeInstanc
  */
 proto.protocol.AccountPaginated.toObject = function(includeInstance, msg) {
   var f, obj = {
-    account: (f = msg.getAccount()) && core_Tron_pb.Account.toObject(includeInstance, f),
+    account: (f = msg.getAccount()) && core_Lite_pb.Account.toObject(includeInstance, f),
     offset: jspb.Message.getFieldWithDefault(msg, 2, 0),
     limit: jspb.Message.getFieldWithDefault(msg, 3, 0)
   };
@@ -3050,8 +3050,8 @@ proto.protocol.AccountPaginated.deserializeBinaryFromReader = function(msg, read
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new core_Tron_pb.Account;
-      reader.readMessage(value,core_Tron_pb.Account.deserializeBinaryFromReader);
+      var value = new core_Lite_pb.Account;
+      reader.readMessage(value,core_Lite_pb.Account.deserializeBinaryFromReader);
       msg.setAccount(value);
       break;
     case 2:
@@ -3096,7 +3096,7 @@ proto.protocol.AccountPaginated.serializeBinaryToWriter = function(message, writ
     writer.writeMessage(
       1,
       f,
-      core_Tron_pb.Account.serializeBinaryToWriter
+      core_Lite_pb.Account.serializeBinaryToWriter
     );
   }
   f = message.getOffset();
@@ -3122,7 +3122,7 @@ proto.protocol.AccountPaginated.serializeBinaryToWriter = function(message, writ
  */
 proto.protocol.AccountPaginated.prototype.getAccount = function() {
   return /** @type{?proto.protocol.Account} */ (
-    jspb.Message.getWrapperField(this, core_Tron_pb.Account, 1));
+    jspb.Message.getWrapperField(this, core_Lite_pb.Account, 1));
 };
 
 
@@ -4925,7 +4925,7 @@ proto.protocol.EasyTransferResponse.prototype.toObject = function(opt_includeIns
  */
 proto.protocol.EasyTransferResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
-    transaction: (f = msg.getTransaction()) && core_Tron_pb.Transaction.toObject(includeInstance, f),
+    transaction: (f = msg.getTransaction()) && core_Lite_pb.Transaction.toObject(includeInstance, f),
     result: (f = msg.getResult()) && proto.protocol.Return.toObject(includeInstance, f),
     txid: msg.getTxid_asB64()
   };
@@ -4965,8 +4965,8 @@ proto.protocol.EasyTransferResponse.deserializeBinaryFromReader = function(msg, 
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new core_Tron_pb.Transaction;
-      reader.readMessage(value,core_Tron_pb.Transaction.deserializeBinaryFromReader);
+      var value = new core_Lite_pb.Transaction;
+      reader.readMessage(value,core_Lite_pb.Transaction.deserializeBinaryFromReader);
       msg.setTransaction(value);
       break;
     case 2:
@@ -5012,7 +5012,7 @@ proto.protocol.EasyTransferResponse.serializeBinaryToWriter = function(message, 
     writer.writeMessage(
       1,
       f,
-      core_Tron_pb.Transaction.serializeBinaryToWriter
+      core_Lite_pb.Transaction.serializeBinaryToWriter
     );
   }
   f = message.getResult();
@@ -5039,7 +5039,7 @@ proto.protocol.EasyTransferResponse.serializeBinaryToWriter = function(message, 
  */
 proto.protocol.EasyTransferResponse.prototype.getTransaction = function() {
   return /** @type{?proto.protocol.Transaction} */ (
-    jspb.Message.getWrapperField(this, core_Tron_pb.Transaction, 1));
+    jspb.Message.getWrapperField(this, core_Lite_pb.Transaction, 1));
 };
 
 
@@ -5355,7 +5355,7 @@ proto.protocol.TransactionExtention.prototype.toObject = function(opt_includeIns
  */
 proto.protocol.TransactionExtention.toObject = function(includeInstance, msg) {
   var f, obj = {
-    transaction: (f = msg.getTransaction()) && core_Tron_pb.Transaction.toObject(includeInstance, f),
+    transaction: (f = msg.getTransaction()) && core_Lite_pb.Transaction.toObject(includeInstance, f),
     txid: msg.getTxid_asB64(),
     constantResultList: msg.getConstantResultList_asB64(),
     result: (f = msg.getResult()) && proto.protocol.Return.toObject(includeInstance, f)
@@ -5396,8 +5396,8 @@ proto.protocol.TransactionExtention.deserializeBinaryFromReader = function(msg, 
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new core_Tron_pb.Transaction;
-      reader.readMessage(value,core_Tron_pb.Transaction.deserializeBinaryFromReader);
+      var value = new core_Lite_pb.Transaction;
+      reader.readMessage(value,core_Lite_pb.Transaction.deserializeBinaryFromReader);
       msg.setTransaction(value);
       break;
     case 2:
@@ -5447,7 +5447,7 @@ proto.protocol.TransactionExtention.serializeBinaryToWriter = function(message, 
     writer.writeMessage(
       1,
       f,
-      core_Tron_pb.Transaction.serializeBinaryToWriter
+      core_Lite_pb.Transaction.serializeBinaryToWriter
     );
   }
   f = message.getTxid_asU8();
@@ -5481,7 +5481,7 @@ proto.protocol.TransactionExtention.serializeBinaryToWriter = function(message, 
  */
 proto.protocol.TransactionExtention.prototype.getTransaction = function() {
   return /** @type{?proto.protocol.Transaction} */ (
-    jspb.Message.getWrapperField(this, core_Tron_pb.Transaction, 1));
+    jspb.Message.getWrapperField(this, core_Lite_pb.Transaction, 1));
 };
 
 
@@ -5683,7 +5683,7 @@ proto.protocol.BlockExtention.toObject = function(includeInstance, msg) {
   var f, obj = {
     transactionsList: jspb.Message.toObjectList(msg.getTransactionsList(),
     proto.protocol.TransactionExtention.toObject, includeInstance),
-    blockHeader: (f = msg.getBlockHeader()) && core_Tron_pb.BlockHeader.toObject(includeInstance, f),
+    blockHeader: (f = msg.getBlockHeader()) && core_Lite_pb.BlockHeader.toObject(includeInstance, f),
     blockid: msg.getBlockid_asB64()
   };
 
@@ -5727,8 +5727,8 @@ proto.protocol.BlockExtention.deserializeBinaryFromReader = function(msg, reader
       msg.addTransactions(value);
       break;
     case 2:
-      var value = new core_Tron_pb.BlockHeader;
-      reader.readMessage(value,core_Tron_pb.BlockHeader.deserializeBinaryFromReader);
+      var value = new core_Lite_pb.BlockHeader;
+      reader.readMessage(value,core_Lite_pb.BlockHeader.deserializeBinaryFromReader);
       msg.setBlockHeader(value);
       break;
     case 3:
@@ -5777,7 +5777,7 @@ proto.protocol.BlockExtention.serializeBinaryToWriter = function(message, writer
     writer.writeMessage(
       2,
       f,
-      core_Tron_pb.BlockHeader.serializeBinaryToWriter
+      core_Lite_pb.BlockHeader.serializeBinaryToWriter
     );
   }
   f = message.getBlockid_asU8();
@@ -5827,7 +5827,7 @@ proto.protocol.BlockExtention.prototype.clearTransactionsList = function() {
  */
 proto.protocol.BlockExtention.prototype.getBlockHeader = function() {
   return /** @type{?proto.protocol.BlockHeader} */ (
-    jspb.Message.getWrapperField(this, core_Tron_pb.BlockHeader, 2));
+    jspb.Message.getWrapperField(this, core_Lite_pb.BlockHeader, 2));
 };
 
 
@@ -6280,7 +6280,7 @@ proto.protocol.TransactionSignWeight.prototype.toObject = function(opt_includeIn
  */
 proto.protocol.TransactionSignWeight.toObject = function(includeInstance, msg) {
   var f, obj = {
-    permission: (f = msg.getPermission()) && core_Tron_pb.Permission.toObject(includeInstance, f),
+    permission: (f = msg.getPermission()) && core_Lite_pb.Permission.toObject(includeInstance, f),
     approvedListList: msg.getApprovedListList_asB64(),
     currentWeight: jspb.Message.getFieldWithDefault(msg, 3, 0),
     result: (f = msg.getResult()) && proto.protocol.TransactionSignWeight.Result.toObject(includeInstance, f),
@@ -6322,8 +6322,8 @@ proto.protocol.TransactionSignWeight.deserializeBinaryFromReader = function(msg,
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new core_Tron_pb.Permission;
-      reader.readMessage(value,core_Tron_pb.Permission.deserializeBinaryFromReader);
+      var value = new core_Lite_pb.Permission;
+      reader.readMessage(value,core_Lite_pb.Permission.deserializeBinaryFromReader);
       msg.setPermission(value);
       break;
     case 2:
@@ -6378,7 +6378,7 @@ proto.protocol.TransactionSignWeight.serializeBinaryToWriter = function(message,
     writer.writeMessage(
       1,
       f,
-      core_Tron_pb.Permission.serializeBinaryToWriter
+      core_Lite_pb.Permission.serializeBinaryToWriter
     );
   }
   f = message.getApprovedListList_asU8();
@@ -6601,7 +6601,7 @@ proto.protocol.TransactionSignWeight.Result.prototype.setMessage = function(valu
  */
 proto.protocol.TransactionSignWeight.prototype.getPermission = function() {
   return /** @type{?proto.protocol.Permission} */ (
-    jspb.Message.getWrapperField(this, core_Tron_pb.Permission, 1));
+    jspb.Message.getWrapperField(this, core_Lite_pb.Permission, 1));
 };
 
 

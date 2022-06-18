@@ -603,7 +603,7 @@ class ApiClient {
   async getChainparameters() {
       let {data} = await xhr.get(`${this.apiUrl}/api/chainparameters`);
       return {
-          tronParameters: data.tronParameters,
+          liteParameters: data.liteParameters,
       }
   }
 

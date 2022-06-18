@@ -1,5 +1,5 @@
 const { buildTransferContract } = require("./transactionBuilder");
-const {Block, Transaction, Account} = require("../protocol/core/Tron_pb");
+const {Block, Transaction, Account} = require("../protocol/core/Lite_pb");
 
 const {
   TransferContract,

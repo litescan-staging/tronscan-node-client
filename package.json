@@ -1,9 +1,9 @@
 {
-  "name": "@tronscan/client",
+  "name": "@litescan/client",
   "version": "0.2.41",
-  "description": "Tronscan API Client",
+  "description": "Litescan API Client",
   "main": "src/index.js",
-  "homepage": "https://api.tronscan.org/",
+  "homepage": "https://api.litescan.org/",
   "scripts": {
     "test": "mocha",
     "protoc:install": "cd protocol && ./install-protobuf.sh",
@@ -12,10 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/tronscan/tronscan-node-client.git"
+    "url": "git://github.com/litescan/litescan-node-client.git"
   },
   "keywords": [
-    "tron"
+    "lite"
   ],
   "author": "Rovak",
   "license": "GPL-3.0",
